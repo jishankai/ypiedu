@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.foot{width:100%;height:214px;padding-top:40px;background:#313233;margin-top:80px;}
+.foot .center{width:1000px;margin:0 auto;}
+.foot .center li{float:left;display:inline-block;}
+.foot .center .one p{font:14px/24px 'Microsoft YaHei';color:#fff;}
+.foot .center .two{margin:14px 0 0 91px;}
+.foot .center .two h1{font:18px/20px 'Microsoft YaHei';color:#fff;}
+.foot .center .two p{font:14px/20px 'Microsoft YaHei';color:#fff;}
+.foot .center .three{margin:28px 0 0 80px;}
+.foot .center .three .left{display:inline-block;margin-right:60px;}
+.foot .center .three .right{display:inline-block;float:left;}

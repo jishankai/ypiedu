@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,p{margin:0;padding:0;}
+input,button,select,textarea{outline:0;border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,ol{list-style:none;}
+fieldset,img{border:none;border:0;vertical-align:top;}
+textarea{resize:none;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+body{font:12px/24px '宋体' Microsoft YaHei;color:#939393;background:#fff;}
+a{color:#4c4c4c;text-decoration:none;outline:none;}
+a:hover{color:#4c4c4c;text-decoration:-underline;}
+.clr:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clr{zoom:1;}
+html{overflow-x:hidden;}

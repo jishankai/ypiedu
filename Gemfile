@@ -36,3 +36,6 @@ end
 group :production do
   gem 'unicorn'
 end
+
+gem 'jquery-rails'
+gem 'country_select'
