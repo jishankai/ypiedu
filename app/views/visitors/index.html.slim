@@ -140,26 +140,47 @@ html
               img[src="./ypiedu_files/icon.png" alt="直线"]
           .center5
             .clr
-              = simple_form_for(:user, html: { class: 'form-horizontal' }) do |f| 
-                = f.input :姓名
-                = f.input :国籍
-                = f.input :性别
-                = f.input :出生日期
-                = f.input :婚姻状况
-                = f.input :出生地
-                = f.input :宗教信仰
-                = f.input :健康状况
-                = f.input :专业学历
-                = f.input :所在学校或单位
-                = f.input :永久通讯地址
-                = f.input :本人联系电话
-                = f.input :本人联系Email
-                = f.input :紧急联系人电话
-                = f.input :紧急联系人Email
-                = f.input :汉语水平
-                = f.input :拟申请专业
-                center
-                  = f.button :submit, "提交申请", class:'btn btn-success' 
+              button.btn.btn-primary.btn-lg.btn-block[type="button" data-toggle="modal" data-target="#applyModal"] 在线申请
+              #applyModal.modal.fade[tabindex="-1" role="dialog" aria-labelledby="applyModalLabel"]
+                .modal-dialog[role="document"]
+                  .modal-content
+                    .modal-header
+                      button.close[type="button" data-dismiss="modal" aria-label="Close"]
+                        span[aria-hidden="true"]
+                          | ×
+                      h4#exampleModalLabel.modal-title
+                        center
+                          | 申请表
+                    .modal-body
+                      .container
+                        = simple_form_for(:user, html: { class: 'form-horizontal' }) do |f| 
+                          = f.input :姓名
+                          = f.input :国籍
+                          = f.input :性别
+                          = f.input :出生日期
+                          = f.input :婚姻状况
+                          = f.input :出生地
+                          = f.input :宗教信仰
+                          = f.input :健康状况
+                          = f.input :专业学历
+                          = f.input :所在学校或单位
+                          = f.input :永久通讯地址
+                          = f.input :本人联系电话
+                          = f.input :本人联系Email
+                          = f.input :紧急联系人电话
+                          = f.input :紧急联系人Email
+                          = f.input :汉语水平
+                          = f.input :拟申请专业
+                          = f.input :信用卡类型
+                          = f.input :信用卡卡号
+                          = f.input :持卡人姓名
+                          = f.input :到期日
+                          = f.input :安全码
+                    .modal-footer
+                      button.btn.btn-default[type="button" data-dismiss="modal"]
+                        | 关闭
+                      button.btn.btn-primary[type="button" data-dismiss="modal"]
+                        | 提交
           /     .left
           /       p
           /         | 为适应院校学生学习需要由浅入深，循序渐进的原则，本实验室将智能硬件的基础架构分解成一个个单独的模块。各个模块可相互独立进行操作，每个模块可以独立编程，实现其独立的功能。另外各个模块之间也可相互结合进行操作，可依据具体的教学及科研需要组成任意的"智能硬件模型"。各项实验密切贴合生活生产中的应用，不仅可以提高学生的实践技能，而且可以提高院校的智能硬件科研能力。
