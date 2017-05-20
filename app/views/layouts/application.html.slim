@@ -3,7 +3,7 @@ html
   head
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
     title
-      = content_for?(:title) ? yield(:title) : 'Ypiedu'
+      = content_for?(:title) ? yield(:title) : '扬州工业职业技术学院'
     meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Ypiedu'}"
     == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => 'reload'
     == javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'

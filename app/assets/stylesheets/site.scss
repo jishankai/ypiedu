@@ -1,0 +1,25 @@
+// Place all the styles related to the site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#students ul li img {
+    height: 180px;
+}
+
+.body {
+    padding: 0 36px;
+    text-align: justify;
+    padding-bottom: 18px;
+}
+
+#introduction img {
+    padding: 0 36px;
+}
+
+@media (max-width: 768px) {
+    #students{
+        text-align:center;
+    }
+    #videos {
+        display: none;
+    }
+}
