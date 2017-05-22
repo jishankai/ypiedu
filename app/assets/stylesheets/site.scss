@@ -5,6 +5,10 @@
     height: 180px;
 }
 
+body {
+    font-family: '微软雅黑';
+}
+
 .body {
     padding: 0 36px;
     text-align: justify;
@@ -23,3 +27,5 @@
         display: none;
     }
 }
+
+ .labels ul li { display: inline-block; vertical-align: middle; height: 24px; line-height: 24px; padding: 0 10px; margin: 5px 10px; font-size: 14px; color: #48d3f7; border-radius: 30px; border: 1px solid #48d3f7; cursor: pointer; }

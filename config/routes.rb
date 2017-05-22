@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  root to: 'site#index'
 
-  get 'index', :to => 'site#index'
+  get 'index', :to => 'visitors#index'
 end
