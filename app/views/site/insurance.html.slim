@@ -1,0 +1,53 @@
+.container[style="margin-top:60px"]
+  .row
+    .panel.panel-info
+      .panel-heading
+        .row
+          .col-md-offset-4.col-md-4
+            button.btn.btn-success.btn-lg.btn-block[type="button" data-toggle="modal" data-target="#applyModal"] 一键保险
+            #applyModal.modal.fade[tabindex="-1" role="dialog" aria-labelledby="applyModalLabel"]
+              .modal-dialog[role="document"]
+                .modal-content
+                  .modal-header
+                    button.close[type="button" data-dismiss="modal" aria-label="Close"]
+                      span[aria-hidden="true"]
+                        | ×
+                    h4#exampleModalLabel.modal-title
+                      center
+                        | 申请表
+                  .modal-body[style="margin:0 10px;"]
+                    = simple_form_for(:user, html: { class: 'form-horizontal' }) do |f|
+                      = f.input :姓名
+                      = f.input :国籍
+                      = f.input :本人联系电话
+                      = f.input :本人联系Email
+                  .modal-footer
+                    button.btn.btn-default[type="button" data-dismiss="modal"]
+                      | 关闭
+                    button.btn.btn-primary[type="button" data-dismiss="modal"]
+                      | 提交
+
+      .panel-body
+        h4.text-center 高等学校要求外国留学生购买保险暂行规定
+        hr.devider
+        img.img-responsive[src="img/s1.jpeg" style="margin-bottom:20px"]
+        p 一、为适应来华留学事业快速发展的需要，优化来华留学环境，维护高等学校稳定，完善高等学校处理突发事件应急机制、保障外国留学生（以下简称“留学生”）合法权益，制定本规定。
+        br
+        p 二、自2008/2009学年度起，各高等学校必须要求来华学习时间超过六个月的留学生（含按原学习计划继续学习超过六个月的学生）在我国大陆购买团体综合保险，作为其办理新学期入学注册手续的必备材料。
+        p 高等学校自行决定来华学习时间不足六个月的留学生是否必须购买团体综合保险。
+        br
+        p 三、为保证同一个学校的留学生享受的保险保障标准一致，高等学校必须选定一家中国保险监督管理委员会（http://www.circ.gov.cn）认可的人身险保险公司，必须选定其包括如下基本内容的一种团体综合保险：
+        ol
+          li 平安险（身故或残疾定额赔付），身故保额不得低于10万元人民币；
+          li 人身意外伤害医疗险，保额不得低于1万元人民币；
+          li 住院医疗保险，保额不得低于40万元人民币。
+        br
+        p 四、个人人身保险的保险单不能作为办理入学注册和在华居留许可的文件。
+        br
+        p 五、高等学校必须将留学生保险列入留学生管理制度归口管理，留学生管理部门和工作人员必须准确记录选定的保险公司有关业务人员姓名、电话、传真，以备留学生出险时协助理赔。
+        br
+        p 六、中小学接受的外国学生保险事宜可参照本通知精神办理。
+        br
+        small
+          | 注：根据不同地区和学校的政策可能略有更新，这里以上海市教育委员会的通知为例。
+          a[href="http://www.chinalawedu.com/news/1200/22598/22615/22822/2007/10/li8123019331620170022740-0.htm"] 点击这里

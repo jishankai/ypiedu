@@ -1,0 +1,73 @@
+.container[style="margin-top:60px"]
+  .row
+    .panel.panel-info
+      .panel-heading
+        .row
+          .col-md-offset-4.col-md-4
+            button.btn.btn-success.btn-lg.btn-block[type="button" data-toggle="modal" data-target="#applyModal"] 一键体检
+            #applyModal.modal.fade[tabindex="-1" role="dialog" aria-labelledby="applyModalLabel"]
+              .modal-dialog[role="document"]
+                .modal-content
+                  .modal-header
+                    button.close[type="button" data-dismiss="modal" aria-label="Close"]
+                      span[aria-hidden="true"]
+                        | ×
+                    h4#exampleModalLabel.modal-title
+                      center
+                        | 申请表
+                  .modal-body[style="margin:0 10px;"]
+                    = simple_form_for(:user, html: { class: 'form-horizontal' }) do |f|
+                      = f.input :姓名
+                      = f.input :国籍
+                      = f.input :本人联系电话
+                      = f.input :本人联系Email
+                  .modal-footer
+                    button.btn.btn-default[type="button" data-dismiss="modal"]
+                      | 关闭
+                    button.btn.btn-primary[type="button" data-dismiss="modal"]
+                      | 提交
+
+      .panel-body
+        h3.text-center 外籍人员办理健康体检须知
+        hr.devider
+        h4.text-center 法定体检对象
+        p
+          | (一)、来华定居或居留一年(或来华留学一年)或一年以上的外国人、华侨以及在大陆居留一年或一年以上的港、澳、台胞；
+        p
+          | (二)、持F、L签证，申请改变来华身份，需办理居留证的外国人；
+        p
+          | (三)、定居国外及台、港、澳地区的中国公民回国(回内地)就业需办理暂住手续的。
+        br
+        h4.text-center 体检项目
+        p
+          | 检查项目包括常规的临床医学检查和实验室检验。
+        p
+          | 临床医学检查项目：内科、外科、五官科、X线检查、心电图、B超（注：留学生不做B超）。
+        p
+          | 实验室检查项目：艾滋病抗体、梅毒、丙肝、结核等。
+        br
+        h4.text-center 外籍人员办理健康体检注意事项
+        p
+          | 1、前台接待时间：周一至周五8：30－11:00。体检时间为上午8：30－11：30，下午不开展体检业务。
+        p
+          | 2、您须携带护照或身份证，办理工作签证需二张二寸彩色证件照，办理学生签证需一张二寸彩色证件照。
+        p
+          | 3、法定体检的费用为645.7元，留学生为380.7元。
+        p
+          | 4、办理体检后四个工作日（包括体检当日）后可领取《境外人员健康检查记录验证证明》。
+        p
+          | 5、体检当日清晨请保持空腹。
+        p
+          | 6、体检前2-3日应注意休息；体检前1天应清淡饮食，如遇发烧、或服用药物请推迟体检。
+        p
+          | 7、《境外人员健康检查记录验证证明》的有效期为半年。
+        br
+
+        address.text-center
+          | 体检场所：北京国际旅行卫生保健中心海淀分中心
+          br 地    址：北京市海淀区德政路10号
+          | 办公时间：8:00 a.m.–10：30 a.m.（周一至周五）
+          br 咨询电话：+86-10-82403675
+          | 网    页：http://www.bjciq.gov.cn/
+          br
+          small 注：这里以北京为例，其他地区请参考当地卫生保健中心官网
